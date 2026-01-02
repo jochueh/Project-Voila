@@ -48,6 +48,19 @@ python main.py eval2 \
   --topk 50 \
   --sample-limit 1000
 
+## Citations
+
+@article{ali2022gsv,
+title={GSV-Cities: Toward appropriate supervised visual place recognition},
+author={Ali-bey, Amar and Chaib-draa, Brahim and Gigu{\`e}re, Philippe},
+journal={Neurocomputing},
+volume={513},
+pages={194--203},
+year={2022},
+publisher={Elsevier}
+}
+
+NASA/METI/AIST/Japan Spacesystems and U.S./Japan ASTER Science Team. (2019). <i>ASTER Global Digital Elevation Model V003</i> [Data set]. NASA Land Processes Distributed Active Archive Center. https://doi.org/10.5067/ASTER/ASTGTM.003 Date Accessed: 2026-01-02
 
 ## Reference
     - https://openaccess.thecvf.com/content_ICCV_2019/papers/Cai_Ground-to-Aerial_Image_Geo-Localization_With_a_Hard_Exemplar_Reweighting_Triplet_Loss_ICCV_2019_paper.pdf
