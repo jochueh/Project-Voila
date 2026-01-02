@@ -1,0 +1,3 @@
+lat_bins: 36
+lon_bins: 72
+use_dem: true

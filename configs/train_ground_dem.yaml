@@ -1,0 +1,25 @@
+exp:
+  name: ground_dem_resnet
+  out_dir: experiments/runs
+  save_every: 1
+  seed: 42
+
+loss:
+  w_cls: 0.1
+  w_reg: 10.0
+  w_trip: 1.0
+  margin: 0.2
+
+optim:
+  lr: 1.0e-4
+  weight_decay: 0.05
+  epochs: 30
+  cosine: true
+
+log:
+  print_every: 50
+
+include:
+  data: configs/data.yaml
+  grid: configs/grid.yaml
+  model: configs/model.yaml

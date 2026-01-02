@@ -1,0 +1,24 @@
+exp:
+  name: coarse2fine_dem_reasoner
+  out_dir: experiments/runs
+  save_every: 1
+  seed: 42
+
+batch_size: 64
+num_workers: 4
+sample_limit: 0
+
+dem_cache_root: ""
+
+dem_embed_dim: 128
+reasoner_hidden: 256
+
+topk: 50
+w_rank: 1.0
+freeze_gcnn_epochs: 0
+
+optim:
+  lr: 1.0e-4
+  weight_decay: 0.05
+  epochs: 10
+  cosine: true

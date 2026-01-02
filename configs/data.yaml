@@ -1,0 +1,25 @@
+processed_root: "/mnt/data/ground_processed"
+metadata_csv: "metadata.csv"
+images_subdir: "images"
+
+dem:
+  mode: raw_geotiff
+  root: "/mnt/data/GDEM_filtered"  
+  subdir: "dem"  
+  dem_size_hw: [64, 64]
+  resample_method: bilinear
+  nodata_fill: median
+  normalize_dem: per-sample
+  missing_dem_policy: skip
+  use_cog: false
+
+geoindex:
+  root: "/mnt/data/geoindex"   
+  cell_size_deg: 5
+  faiss:
+    nlist: 4096
+    m: 16
+
+vector:
+  root: "/mnt/data/vector_cache"          
+  features: ["roads", "water", "landcover"]     

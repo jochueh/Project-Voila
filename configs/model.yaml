@@ -1,0 +1,18 @@
+img_h: 224
+img_w: 224
+dem_h: 64
+dem_w: 64
+
+embed_dim: 256
+dem_embed_dim: 128
+reason_hidden: 256
+backbone: "resnet18"
+pretrained_backbone: true
+dropout: 0.1
+
+policy:
+  hidden: 128         
+  experts: ["dem", "vector"]
+
+reasoner:
+  k: 5 # number of candidate cells scored in fine stage
